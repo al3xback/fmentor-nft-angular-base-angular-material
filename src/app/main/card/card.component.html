@@ -1,0 +1,48 @@
+<mat-card>
+	<mat-card-header>
+		<div class="image">
+			<img
+				mat-card-image
+				width="302"
+				height="302"
+				[src]="imageSrc"
+				alt=""
+			/>
+		</div>
+	</mat-card-header>
+	<mat-card-content>
+		<h2 class="title">
+			<a href="#" class="btn btn--link">{{ title }}</a>
+		</h2>
+		<p class="desc">
+			{{ description }}
+		</p>
+		<ul class="stats-list">
+			<li class="stats-list-item">
+				<i class="icon-ethereum" aria-hidden="true"></i>
+				<span>{{ ethereumAmount }} ETH</span>
+			</li>
+			<li class="stats-list-item">
+				<i class="icon-clock" aria-hidden="true"></i>
+				<span>{{ remainingTime }} days left</span>
+			</li>
+		</ul>
+	</mat-card-content>
+	<mat-card-footer>
+		<div class="author">
+			<img
+				class="author-img"
+				width="33"
+				height="33"
+				[src]="author.imageSrc"
+				[alt]="author.name"
+			/>
+			<span class="author-desc"
+				>Creation of
+				<a mat-button href="#" class="btn btn--link">{{
+					author.name
+				}}</a></span
+			>
+		</div>
+	</mat-card-footer>
+</mat-card>

@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'assets/scss/abstracts/variables' as var;
+
+.mdc-button {
+	text-decoration: none;
+}
+
+.mat-mdc-button:not(:disabled) {
+	--mdc-text-button-label-text-color: var.$color-white;
+}
+
+.mat-mdc-button:not(:disabled):hover {
+	color: var.$color-cyan;
+}

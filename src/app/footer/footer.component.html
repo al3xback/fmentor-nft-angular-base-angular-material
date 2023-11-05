@@ -1,0 +1,20 @@
+<div class="container">
+	<p>
+		Challenge by
+		<a
+			mat-button
+			color="accent"
+			[href]="challenge.creator.link"
+			rel="noopener"
+			target="_blank"
+			>{{ challenge.creator.name }}</a
+		>. Coded by
+		<a
+			mat-button
+			[href]="challenge.coder.gitHubLink"
+			rel="noopener"
+			target="_blank"
+			>{{ challenge.coder.name }}</a
+		>.
+	</p>
+</div>
