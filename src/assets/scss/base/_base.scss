@@ -12,7 +12,7 @@ body {
 	font-size: func.em(16);
 	font-weight: var.$font-weight-400;
 	color: var.$color-soft-blue;
-	line-height: math.div(23, 16);
+	line-height: 1.5;
 }
 
 ul,
